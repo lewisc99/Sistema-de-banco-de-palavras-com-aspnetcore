@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null; //aqui informamos que o layout vai ser nulo
+    }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="/contato/recebercontato">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite um nome">
+
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu Email">
+
+            </div>
+            <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto</label>
+                <input type="text" name="assunto" class="form-control" id="assunto" placeholder="Digite um assunto">
+
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea  name="mensagem" class="form-control" id="mensagem" placeholder="Digite uma mensagem"></textarea>
+
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

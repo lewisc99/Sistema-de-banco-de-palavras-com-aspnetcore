@@ -1,0 +1,15 @@
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\bin\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.deps.json
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\bin\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.runtimeconfig.json
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\bin\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.runtimeconfig.dev.json
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\bin\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.dll
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\bin\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.pdb
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.csprojAssemblyReference.cache
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.RazorAssemblyInfo.cache
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.RazorAssemblyInfo.cs
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.RazorTargetAssemblyInfo.cache
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.dll
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.pdb
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistema-de-banco-de-palavras.genruntimeconfig.cache
