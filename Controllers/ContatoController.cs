@@ -17,7 +17,17 @@ namespace sistemadebancodepalavras.Controllers
 
         public IActionResult ReceberContato([FromForm] Contato contato)
         {
-            return new ContentResult() { Content = $" nome: {contato.Nome}, email: {contato.Email}, assunto: {contato.Assunto }, mensagem: {contato.Mensagem}" };
+
+            if(ModelState.IsValid)
+            {
+                return new ContentResult() { Content = $" nome: {contato.Nome}, email: {contato.Email}, assunto: {contato.Assunto }, mensagem: {contato.Mensagem}" };
+
+            }
+            else
+            {
+                return View("Index");
+            }
+
         }
       /*  public IActionResult ReceberContato()
         {
