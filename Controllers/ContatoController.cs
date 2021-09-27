@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using sistemadebancodepalavras.Models;
+using sistemadebancodepalavras.Library.Mail;
 
 namespace sistemadebancodepalavras.Controllers
 {
@@ -20,7 +21,13 @@ namespace sistemadebancodepalavras.Controllers
 
             if(ModelState.IsValid)
             {
-                return new ContentResult() { Content = $" nome: {contato.Nome}, email: {contato.Email}, assunto: {contato.Assunto }, mensagem: {contato.Mensagem}" };
+                // return new ContentResult() { Content = $" nome: {contato.Nome}, email: {contato.Email}, assunto: {contato.Assunto }, mensagem: {contato.Mensagem}" };
+
+
+                EnviarEmail.EnviarMensagemContato(contato);
+
+                ViewBag.Mensagem = "Mensagem enviada com sucesso";
+                return View("Index");
 
             }
             else
