@@ -43,7 +43,7 @@ namespace AspNetCore
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 45, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c51d7a5e980f47b19f7c665f66987202", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "00c2dd1d086b41ff856cd15de4b350b3", async() => {
                 BeginContext(33, 32, true);
                 WriteLiteral("\r\n    <title>Bem vindo</title>\r\n");
                 EndContext();
@@ -63,7 +63,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(74, 166, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30490491a15a431892c405530d7910c2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa7f1903bf36489aac9deb769acfd2b9", async() => {
                 BeginContext(80, 105, true);
                 WriteLiteral("\r\n    <h1>Bem vindo ao nosso site</h1>\r\n    <footer>\r\n        Todos os direitos reservados &copy; 2010 - ");
                 EndContext();

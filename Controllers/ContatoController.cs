@@ -12,6 +12,7 @@ namespace sistemadebancodepalavras.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Contato = new Contato();
             return View();
         }
 
@@ -22,7 +23,7 @@ namespace sistemadebancodepalavras.Controllers
             if(ModelState.IsValid)
             {
                 // return new ContentResult() { Content = $" nome: {contato.Nome}, email: {contato.Email}, assunto: {contato.Assunto }, mensagem: {contato.Mensagem}" };
-
+                ViewBag.Contato = new Contato();
 
                 EnviarEmail.EnviarMensagemContato(contato);
 
@@ -32,7 +33,13 @@ namespace sistemadebancodepalavras.Controllers
             }
             else
             {
+
+                ViewBag.Contato = contato;
                 return View("Index");
+
+
+
+
             }
 
         }
