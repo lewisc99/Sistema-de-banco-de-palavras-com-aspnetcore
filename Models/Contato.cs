@@ -15,7 +15,7 @@ namespace sistemadebancodepalavras.Models
 
         [Required(ErrorMessage ="O email e obrigatorio preencher")]
         [MaxLength(70,ErrorMessage ="o campo deve ter no maximo 70 caracteres")]
-        [EmailAddress]
+        [EmailAddress(ErrorMessage =" O campo E-mail e invalido")]
         public string Email { get; set; }
 
         [Required(ErrorMessage ="O assunto deve ser preeenchido")]

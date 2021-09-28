@@ -50,7 +50,7 @@ namespace AspNetCore
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(102, 353, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07b4ba86b2e740e192171765d3d1152b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4f7e18897c774285b46b2dbca134ca8a", async() => {
                 BeginContext(108, 340, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"" name=""viewport"" content=""width=device-width, initial-scale=1.0"" />
@@ -75,7 +75,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(457, 1543, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e6068df76134424977c29409a5106a0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "241717fc27634745be8a4bcb1ccb7817", async() => {
                 BeginContext(463, 239, true);
                 WriteLiteral("\r\n    <div class=\"container\">\r\n        <form method=\"post\" action=\"/contato/recebercontato\">\r\n            <div class=\"mb-4\">\r\n                <label for=\"nome\" class=\"form-label\">Nome</label>\r\n                <input type=\"text\" name=\"nome\"");
                 EndContext();

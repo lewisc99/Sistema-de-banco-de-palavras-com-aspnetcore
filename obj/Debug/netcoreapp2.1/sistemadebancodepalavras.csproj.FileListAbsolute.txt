@@ -23,3 +23,4 @@ C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcor
 C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistemadebancodepalavras.genruntimeconfig.cache
 C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\sistemadebancodepalavras.csproj.CopyComplete
 C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\Razor\Views\Contato\Index.cshtml.g.cs
+C:\Users\Pichau\Desktop\Asp\site01\sistema-de-banco-de-palavras\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.cshtml.g.cs
