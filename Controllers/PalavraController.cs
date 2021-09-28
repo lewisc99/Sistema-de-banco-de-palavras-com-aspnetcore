@@ -30,13 +30,13 @@ namespace sistemadebancodepalavras.Controllers
         [HttpGet]
         public IActionResult Atualizar()
         {
-            return View();
+            return View("Cadastrar");
         }
         [HttpPost]
         public IActionResult Atualizar([FromForm] Palavra palavra)
 
         {
-            return View();
+            return View("Cadastrar");
         }
         [HttpGet] //excluir pode usar o http Get
         public IActionResult Excluir(int id)

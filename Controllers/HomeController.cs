@@ -21,7 +21,7 @@ namespace sistemadebancodepalavras.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (usuario.Email == "luizdoidosonavida@gmail.com" && usuario.Email == "123456")
+                if (usuario.Email == "luizdoidosonavida@gmail.com" || usuario.Email == "123456")
                 {
                     return RedirectToAction("Index","Palavra");
                 }
