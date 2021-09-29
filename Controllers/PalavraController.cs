@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using sistemadebancodepalavras.Database;
 using sistemadebancodepalavras.Models;
 using System;
 using System.Collections.Generic;
@@ -10,8 +11,17 @@ namespace sistemadebancodepalavras.Controllers
     public class PalavraController : Controller
     {
         //listar todas as palavras do banco de dados.
+
+        private DatabaseContext _db;
+        public PalavraController(DatabaseContext db)
+        {
+            _db = db;
+        }
+
+
         public IActionResult Index()
         {
+           ViewBag.Palavras =  _db.Palavras.ToList();
             return View();
         }
 
