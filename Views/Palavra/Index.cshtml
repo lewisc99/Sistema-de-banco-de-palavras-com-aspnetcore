@@ -1,4 +1,6 @@
-﻿@{ 
+﻿@model List<sistemadebancodepalavras.Models.Palavra>
+
+@{ 
     Layout = null;
 }
 
@@ -12,9 +14,9 @@
 </head>
 <body>
 
-    <span><b>Total de registros: </b> @ViewBag.Palavras.Count;</span>
+ 
     <div class="container">
-        <a href="/palavra/cadastrar" class="btn btn-primary">Cadastrar</a>
+        <a href="/palavra/cadastrar" class="btn btn-primary">Cadastrar</a>   <span><b>Total de registros: </b> @Model.Count</span>
         <table class="table">
             <thead class="table-dark">
                 <tr>
@@ -25,15 +27,23 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Elefante</td>
-                    <td>Facil</td>
-                    <td><a href="/palavra/atualizar/1" class="btn">Editar</a>
-                        <a href="/palavra/excluir/1" class="btn">Excluir</a></td>
+                @foreach (var palavra in Model)
+                {
 
-                </tr>
+
+                    <tr>
+                        <th scope="row">@palavra.Id</th>
+                        <td>@palavra.Nome</td>
+                        <td>@palavra.Nivel</td>
+                        <td>
+                            <a href="/palavra/atualizar/@palavra.Id" class="btn">Editar</a>
+                            <a href="/palavra/excluir/@palavra.Id" class="btn">Excluir</a>
+                        </td>
+
+                    </tr>
+                }
             </tbody>
+
         </table>
     </div>
 </body>

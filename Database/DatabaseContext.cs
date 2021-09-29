@@ -9,10 +9,10 @@ namespace sistemadebancodepalavras.Database
         public DbSet<Palavra> Palavras { get; set; }
         public DatabaseContext(DbContextOptions<DatabaseContext> options) :base(options)
         {
+            //garante que o banco seja criado.
+            Database.EnsureCreated();
 
-            Database.EnsureCreated(); //garante que o banco seja criado.
-
-
+           
         }
 
     }
