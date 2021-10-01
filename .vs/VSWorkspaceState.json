@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Models",
-    "\\Views",
-    "\\Views\\Contato"
+    "\\site01"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\site01\\site01.sln",
   "PreviewInSolutionExplorer": false
 }
