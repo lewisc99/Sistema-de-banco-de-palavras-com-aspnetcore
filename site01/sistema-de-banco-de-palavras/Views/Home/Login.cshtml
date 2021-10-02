@@ -1,0 +1,27 @@
+﻿@model List<sistemadebancodepalavras.Models.Palavra>
+
+@{ //Layou = "_la
+    Layout = "_Layout";
+}
+@{
+    ViewBag.Title = "Login";
+}
+
+<form method="post" action="/home/login">
+    <div class="mb-4">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" name="email" value="" class="form-control" id="email" placeholder="Digite seu emal">
+        @Html.ValidationMessage("email")
+    </div>
+    <div class="mb-4">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="text" name="senha" value="" class="form-control" id="senha" placeholder="Digite sua senha">
+
+        @Html.ValidationMessage("senha")
+    </div>
+
+
+
+    <button type="submit" class="btn btn-dark">Enviar</button>
+</form>
+@ViewBag.Mensagem
