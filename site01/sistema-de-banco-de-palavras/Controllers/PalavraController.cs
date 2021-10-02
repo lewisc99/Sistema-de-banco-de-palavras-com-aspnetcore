@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using sistemadebancodepalavras.Library.Filters;
+using X.PagedList;
 
 namespace sistemadebancodepalavras.Controllers
 {
@@ -21,11 +22,18 @@ namespace sistemadebancodepalavras.Controllers
         }
 
 
-        public IActionResult Index()
+        public IActionResult Index(int? page) //passamos um parametro page.
         {
-
+            var pageNumber = page ?? 1; //se o resultado não for nulo.
             var palavras = _db.Palavras.ToList();
-            return View(palavras);
+
+            var resultadoPaginado = palavras.ToPagedList(pageNumber, 5);
+            //acima informa a pagina principal, e o segundo parametro e
+            //quantidade de resultados da coluna por pagina (5).
+
+
+
+            return View(resultadoPaginado);
             
             
         }

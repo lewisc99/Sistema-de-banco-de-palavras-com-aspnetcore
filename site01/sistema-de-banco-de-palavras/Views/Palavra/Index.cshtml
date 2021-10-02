@@ -1,4 +1,7 @@
-﻿@model List<sistemadebancodepalavras.Models.Palavra>
+﻿@model X.PagedList.IPagedList<sistemadebancodepalavras.Models.Palavra>
+
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
 
 @{ //Layou = "_la
     Layout = "_Layout";
@@ -15,8 +18,9 @@
 }
 
 
-
-<a href="/palavra/cadastrar" class="btn btn-dark">Cadastrar</a>   <span><b>Total de registros: </b> @Model.Count</span>
+<link href="~/css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<a href="/palavra/cadastrar" class="btn btn-dark">Cadastrar</a>
+<span><b>Total de registros: </b> @Model.TotalItemCount</span>
 <br />
 <table class="table">
     <thead class="table-dark">
@@ -46,3 +50,5 @@
     </tbody>
 
 </table>
+
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))

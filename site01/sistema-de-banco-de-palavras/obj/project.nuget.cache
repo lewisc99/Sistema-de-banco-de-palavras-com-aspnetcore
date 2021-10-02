@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DGM97joHn5SL5WLPi972f5nlfi7dFZdkYnUgPyp1QQBlCv/j5yVwSekH8/C8l55J0Jsu6WAH+jLaL+ApIzuqUQ==",
+  "dgSpecHash": "IWJq3pTvQG91V+1Mwhi5j8UiAkt4BlC1j64g7gVhsXIzedz2tHIWiZ2nA6lHrkKI8fqyUujximTEKzfKOEshGw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Asp\\site01\\sistema-de-banco-de-palavras\\sistemadebancodepalavras.csproj",
   "expectedPackageFiles": [
@@ -223,7 +223,7 @@
     "C:\\Users\\Pichau\\.nuget\\packages\\system.io.pipelines\\4.5.0\\system.io.pipelines.4.5.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
-    "C:\\Users\\Pichau\\.nuget\\packages\\system.linq.queryable\\4.0.1\\system.linq.queryable.4.0.1.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\system.linq.queryable\\4.3.0\\system.linq.queryable.4.3.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
@@ -280,7 +280,9 @@
     "C:\\Users\\Pichau\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\Pichau\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Pichau\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\x.pagedlist\\7.5.0\\x.pagedlist.7.5.0.nupkg.sha512",
+    "C:\\Users\\Pichau\\.nuget\\packages\\x.pagedlist.mvc.core\\7.5.0\\x.pagedlist.mvc.core.7.5.0.nupkg.sha512"
   ],
   "logs": []
 }
