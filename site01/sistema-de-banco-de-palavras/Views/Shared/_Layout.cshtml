@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 @using Microsoft.AspNetCore.Http;
 @{
     string Login = Context.Session.GetString("Login");
@@ -68,3 +69,65 @@
     </div>
 </body>
 </html>
+=======
+
+
+
+<DOCTYPE html>
+    <html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> @ViewBag.Title</title>
+       
+    </head>
+    <body>
+        
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/">Banco de Palavras</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                                </li>
+                                <!-- todo - apresentar este menu apenas se o usuario tiver logado-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/palavra">Palavras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/home/login">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contato">Contato</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+      
+        <div class="container">
+           
+            <div> 
+                <!--vai sempre colocar todo arquivo html dentro desse arquivo-->
+                @RenderBody()
+            </div>
+            <footer><!--footer-->
+            <div class="row">
+                <div class="col-sm-12">
+                    Todos os direitos reservado &copy; 2010 - @DateTime.Now.Year
+                </div>
+            </div>
+            </footer>
+        </div>
+    </body>
+</html>
+
+>>>>>>> 3c1b94f0f6e29cceade2375b80bcd32a96222106

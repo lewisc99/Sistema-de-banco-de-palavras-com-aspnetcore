@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 ﻿@model X.PagedList.IPagedList<sistemadebancodepalavras.Models.Palavra>
 
 @using X.PagedList.Mvc.Core;
 @using X.PagedList;
+=======
+﻿@model List<sistemadebancodepalavras.Models.Palavra>
+>>>>>>> 3c1b94f0f6e29cceade2375b80bcd32a96222106
 
 @{ //Layou = "_la
     Layout = "_Layout";
 }
+<<<<<<< HEAD
 @{
     ViewBag.Title = "Palavra - listagem";
 }
@@ -52,3 +57,40 @@
 </table>
 
 @Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))
+=======
+@{ 
+    ViewBag.Title = "Palavra - listagem";
+}
+
+
+<a href="/palavra/cadastrar" class="btn btn-dark">Cadastrar</a>   <span><b>Total de registros: </b> @Model.Count</span>
+<table class="table">
+<thead class="table-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Palavra</th>
+        <th scope="col">Nivel</th>
+        <th scope="col">Ação</th>
+    </tr>
+</thead>
+<tbody>
+    @foreach (var palavra in Model)
+    {
+
+
+        <tr>
+            <th scope="row">@palavra.Id</th>
+            <td>@palavra.Nome</td>
+            <td>@palavra.Nivel</td>
+            <td>
+                <a href="/palavra/atualizar/@palavra.Id" class="btn">Editar</a>
+                <a href="/palavra/excluir/@palavra.Id" class="btn">Excluir</a>
+            </td>
+
+        </tr>
+    }
+</tbody>
+
+</table>
+    
+>>>>>>> 3c1b94f0f6e29cceade2375b80bcd32a96222106
