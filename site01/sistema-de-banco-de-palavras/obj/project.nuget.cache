@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IWJq3pTvQG91V+1Mwhi5j8UiAkt4BlC1j64g7gVhsXIzedz2tHIWiZ2nA6lHrkKI8fqyUujximTEKzfKOEshGw==",
+  "dgSpecHash": "LPgQH00t2r7HgSR+J4gWIcej0coMHBhy+cdEd+RcwN+sTUSPDjzcCDGo/4lzNr5GcOg0YoAFT6kYuCdn9JBIog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pichau\\Desktop\\Asp\\site01\\sistema-de-banco-de-palavras\\sistemadebancodepalavras.csproj",
+  "projectFilePath": "c:\\Users\\Pichau\\Desktop\\Asp\\site01\\sistema-de-banco-de-palavras\\sistemadebancodepalavras.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
