@@ -44,6 +44,10 @@ namespace sistemadebancodepalavras.Controllers
                 _db.Palavras.Add(palavra);
                 _db.SaveChanges();
 
+
+                TempData["Mensagem"] = "A palavra " + palavra.Nome +" foi cadastrada com sucesso!";
+
+
                 return RedirectToAction("Index");
             }
            
@@ -67,7 +71,10 @@ namespace sistemadebancodepalavras.Controllers
                 _db.Palavras.Update(palavra); //atualizando o endereço
                 _db.SaveChanges(); //salvando
 
-                return RedirectToAction("Index"); //se der certo vai retornar o usuario para a tabela.
+
+                TempData["Mensagem"] = "A palavra " + palavra.Nome + " foi atualizada com sucesso!";
+
+                return RedirectToAction("Index");
             }
 
             return View("Cadastrar", palavra); // se der errado vai retornar o dado que o usuario preencheu
@@ -79,8 +86,13 @@ namespace sistemadebancodepalavras.Controllers
         [HttpGet] //excluir pode usar o http Get
         public IActionResult Excluir(int Id)
         {
+
+            Palavra palavra = _db.Palavras.Find(Id);
             _db.Palavras.Remove(_db.Palavras.Find(Id));
             _db.SaveChanges();
+
+            TempData["Mensagem"] = "A palavra " + palavra.Nome + " foi deletada com sucesso!";
+
             //todo registro do banco
             return Redirect("Index");
         }
