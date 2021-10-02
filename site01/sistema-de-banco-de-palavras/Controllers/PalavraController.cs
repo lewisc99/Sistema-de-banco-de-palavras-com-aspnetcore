@@ -14,16 +14,22 @@ namespace sistemadebancodepalavras.Controllers
     public class PalavraController : Controller
     {
         //listar todas as palavras do banco de dados.
-
+        List<Nivel> niveis = new List<Nivel>();
         private DatabaseContext _db;
         public PalavraController(DatabaseContext db)
         {
             _db = db;
+
+            niveis.Add(new Nivel() { Id = 1, Nome = "Fácil" });
+            niveis.Add(new Nivel() { Id = 2, Nome = "Médio" });
+            niveis.Add(new Nivel() { Id = 3, Nome = "Difícil" });
         }
+
 
 
         public IActionResult Index(int? page) //passamos um parametro page.
         {
+
             var pageNumber = page ?? 1; //se o resultado não for nulo.
             var palavras = _db.Palavras.ToList();
 
@@ -42,13 +48,18 @@ namespace sistemadebancodepalavras.Controllers
         [HttpGet]
         public IActionResult Cadastrar()
         {
+            ViewBag.Nivel = niveis;
             return View(new Palavra());
         }
         [HttpPost]
         public IActionResult Cadastrar([FromForm] Palavra palavra)
         {
+            ViewBag.Nivel = niveis;
+
             if (ModelState.IsValid)
             {
+
+             
                 _db.Palavras.Add(palavra);
                 _db.SaveChanges();
 
@@ -59,12 +70,13 @@ namespace sistemadebancodepalavras.Controllers
                 return RedirectToAction("Index");
             }
            
-            return View();
+            return View(palavra);
         }
 
         [HttpGet]
         public IActionResult Atualizar(int Id)
         {
+            ViewBag.Nivel = niveis;
             Palavra palavra = _db.Palavras.Find(Id);
 
 
@@ -74,6 +86,7 @@ namespace sistemadebancodepalavras.Controllers
         public IActionResult Atualizar([FromForm] Palavra palavra)
 
         {
+            ViewBag.Nivel = niveis;
             if (ModelState.IsValid)
             {
                 _db.Palavras.Update(palavra); //atualizando o endereço
