@@ -13,7 +13,7 @@
     <div class="mb-4">
         <label for="nome" class="form-label">Nome</label>
         <input type="text" name="nome" value="@Model.Nome" class="form-control" id="nome" placeholder="Digite um nome">
-<<<<<<< HEAD
+
         @Html.ValidationMessage("nome")
     </div>
     <div class="mb-4">
@@ -34,19 +34,10 @@
         </select>
 
         <!-- <input type="text" name="nivel" value= Model.Nivel" class="form-control" id="nivel" placeholder="Digite o Nivel  1 - Facil, 2 - media, 3 - Dificil">-->
-=======
+
         @Html.ValidationMessage("name")
     </div>
-    <div class="mb-4">
-        <label for="nivel" class="form-label">Nivel</label>
-        <input type="text" name="nivel" value="@Model.Nivel" class="form-control" id="nivel" placeholder="Digite o Nivel  1 - Facil, 2 - media, 3 - Dificil">
->>>>>>> 3c1b94f0f6e29cceade2375b80bcd32a96222106
-
-        @Html.ValidationMessage("nivel")
-    </div>
-
-
-
+    
     <button type="submit" class="btn btn-dark">Salvar</button>
 </form>
 @ViewBag.Mensagem
